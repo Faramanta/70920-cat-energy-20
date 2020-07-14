@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Kate M](https://up.htmlacademy.ru/adaptive/20/user/70920).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
