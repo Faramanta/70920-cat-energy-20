@@ -4,52 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="show-main-nav">
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a href="index.html" class="page-header__logo logo">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="">
-          <img src="img/logo-txt.svg" width="101" height="18" alt="Кэт энерджи">
+          <img src="img/logo-mobile.svg"  width="191" height="39" alt="Кэт энерджи">
         </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <a href="index.html" class="main-nav__list-link">главная</a>
-            </li>
-            <li class="main-nav__list-item">
-              <span class="main-nav__list-link main-nav__list-link--active">каталог продукции</span>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="form.html" class="main-nav__list-link">подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+        <button class="page-header__toggle burger burger--open" type="button">
+          <span class="burger__line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="index.html" class="main-nav__list-link main-nav__list-link--active">главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <span class="main-nav__list-link">каталог продукции</span>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html" class="main-nav__list-link">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
-      <div class="section catalog">
+      <div class="catalog">
         <div class="content-header">
           <h1 class="title-h1">Каталог продукции</h1>
         </div>
 
-        <div class="catalog-list">
-          <article class="catalog-list__item card">
+        <div class="catalog__list ">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy PRO 500 г">
             </div>
+
             <div class="card__info">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">500 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -62,10 +64,11 @@
                 </li>
               </ul>
             </div>
+
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy PRO 1000 г">
             </div>
@@ -73,7 +76,7 @@
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">1000 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -89,7 +92,7 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy PRO 500 г">
             </div>
@@ -97,7 +100,7 @@
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">500 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -113,7 +116,7 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy PRO 1000 г">
             </div>
@@ -121,7 +124,7 @@
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">1000 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -137,7 +140,7 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy slim 500 г">
             </div>
@@ -145,7 +148,7 @@
               <h3 class="card__title">Cat Energy slim 500 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">500 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -161,7 +164,7 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy slim 1000 г">
             </div>
@@ -169,7 +172,7 @@
               <h3 class="card__title">Cat Energy slim 1000 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">1000 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -185,7 +188,7 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
+          <article class="catalog__list-item card">
             <div class="card__img-wrap">
               <img src="https://via.placeholder.com/140x112" class="card__img" alt="Cat Energy slim 500 г">
             </div>
@@ -193,7 +196,7 @@
               <h3 class="card__title">Cat Energy slim 500 г</h3>
               <ul class="card__properties-list">
                 <li class="card__properties-item">
-                  <span class="card__properties-label">Объем</span>
+                  <span class="card__properties-label">Масса</span>
                   <span class="card__properties-value">500 г</span>
                 </li>
                 <li class="card__properties-item">
@@ -209,21 +212,23 @@
             <a href="#" class="card__button button">заказать</a>
           </article>
 
-          <article class="catalog-list__item card">
-            <img src="https://via.placeholder.com/30x30">
-            <p class="card__title">Показать еще 100500 товаров</p>
+          <article class="catalog__list-item card card--column">
+            <img src="https://via.placeholder.com/30x30" class="card__imd card__imd--column">
+            <p class="card__title card__title--column">Показать еще 100500 товаров</p>
             <p class="card__txt">На самом деле вкусов гораздо больше!</p>
             <button class="catalog__button-more button" type="button">показать все</button>
           </article>
         </div>
       </div>
 
-      <div class="section catalog-more">
-        <div class="container">
-          <h2 class="title-h2">Дополнительные товары</h2>
+      <div class="catalog-more">
+          <h2 class="title-line">
+            <span class="title-line__txt">Дополнительные товары</span>
+          </h2>
 
-          <div class="catalog-more-list">
-            <article class="catalog-more-list__item card-more">
+        <div class="container">
+          <div class="catalog-more__list">
+            <article class="catalog-more__list-item card-more">
               <h3 class="card-more__title">Сахарозаменитель</h3>
               <p class="card-more__properties">
                 <span class="card-more__properties-label">1 упаковка (100 г)</span>
@@ -231,7 +236,7 @@
               </p>
               <a href="#" class="card-more__button button">заказать</a>
             </article>
-            <article class="catalog-more-list__item card-more">
+            <article class="catalog-more__list-itemlist__item card-more">
               <h3 class="card-more__title">питьевая вода</h3>
               <p class="card-more__properties">
                 <span class="card-more__properties-label">5 литров</span>
@@ -239,7 +244,7 @@
               </p>
               <a href="#" class="card-more__button button">заказать</a>
             </article>
-            <article class="catalog-more-list__item card-more">
+            <article class="catalog-more__list-item card-more">
               <h3 class="card-more__title">молоко</h3>
               <p class="card-more__properties">
                 <span class="card-more__properties-label">1 литр</span>
@@ -247,7 +252,7 @@
               </p>
               <a href="#" class="card-more__button button">заказать</a>
             </article>
-            <article class="catalog-more-list__item card-more">
+            <article class="catalog-more__list-item card-more">
               <h3 class="card-more__title">витамины</h3>
               <p class="card-more__properties">
                 <span class="card-more__properties-label">1 упаковка (30 г)</span>
@@ -259,35 +264,37 @@
         </div>
       </div>
 
-      <div class="section gift">
+      <div class="gift">
         <div class="container">
           <div class="gift__inner">
-            <img src="https://via.placeholder.com/78x60" class="gift__img" alt="">
-            <p class="gift__txt">Закажите все и получите чехол для кота в подарок!</p>
+            <img src="https://via.placeholder.com/78x60" width="78px" height="80px" class="gift__img" alt="">
+            <p class="gift__txt">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
 
-      <div class="section section--grey contacts">
+      <div class="contacts contacts--grey">
         <div class="container">
           <div class="contacts__header">
-            <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__offer">
+              <span class="contacts__offer-top">приглашаем</span>
+              к&nbsp;сотрудничеству дилеров!</p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
 
         <div class="contacts__map map">
           <div class="map__pin">
-            <img src="img/map-pin.png" alt="">
+            <img src="img/map-pin.png" class="map__pin-icon" alt="">
           </div>
-          <img src="img/map.jpg" alt="">
+          <img src="img/map.jpg" class="map__img" alt="">
         </div>
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <a class="logo">
+      <div class="container page-footer__container">
+        <a class="page-footer__logo logo">
           <img src="img/logo-txt.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
 

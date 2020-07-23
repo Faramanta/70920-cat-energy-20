@@ -1,0 +1,23 @@
+.gift {
+  padding: 39px 0 35px;
+}
+
+.gift__inner {
+  padding: 55px 56px 42px;
+  text-align: center;
+  background: $basic_green  url("../../img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.gift__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.gift__txt {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  margin: 52px auto 0;
+}

@@ -1,0 +1,37 @@
+.banner {
+  padding: 27px 0 22px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.banner__title {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  color: $white;
+}
+
+.banner__slogan {
+  margin: 25px auto 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner__img {
+  margin: 29px auto 0;
+}
+
+.banner__btn {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -4,47 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="show-main-nav">
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a href="index.html" class="page-header__logo logo">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="">
-          <img src="img/logo-txt.svg" width="101" height="18" alt="Кэт энерджи">
+          <img src="img/logo-mobile.svg"  width="191" height="39" alt="Кэт энерджи">
         </a>
 
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <a href="index.html" class="main-nav__list-link">главная</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="catalog.html" class="main-nav__list-link">каталог продукции</a>
-            </li>
-            <li class="main-nav__list-item">
-              <span class="main-nav__list-link main-nav__list-link--active">подбор программы</span>
-            </li>
-          </ul>
-        </nav>
+        <button class="page-header__toggle burger burger--open" type="button">
+          <span class="burger__line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="index.html" class="main-nav__list-link main-nav__list-link--active">главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html" class="main-nav__list-link">каталог продукции</a>
+          </li>
+          <li class="main-nav__list-item">
+            <span class="main-nav__list-link">подбор программы</span>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
-      <div class="section">
-        <div class="content-header">
+      <div class="page-main__form order">
+        <div class="content-header order__header">
           <h1 class="title-h1">Подбор программы</h1>
+          <p class="order__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
 
-        <form class="form" action="https://echo.htmlacademy.ru">
-          <p class="form__txt">Заполните анкету, и мы подберем
-            программу питания для вашего кота</p>
+        <form class="order__form form" action="https://echo.htmlacademy.ru">
 
-          <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset--border">
             <div class="form__row">
               <label class="form__label" for="catName">имя:*</label>
               <input class="form__field" type="text" id="catName" placeholder="барсик">
@@ -57,11 +57,11 @@
               <label class="form__label" for="catAge">Возраст (лет):</label>
               <input class="form__field" type="number" id="catAge" placeholder="7">
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__section">
+          <fieldset class="form__fieldset form__fieldset--border">
             <div class="form__radio radio">
-              <input type="radio" name="program" class="radio__input" id="slimming">
+              <input type="radio" name="program" class="radio__input" id="slimming" checked>
               <label class="radio__label" for="slimming">похудение</label>
             </div>
             <div class="form__radio radio">
@@ -72,66 +72,78 @@
               <input type="radio" name="program" class="radio__input" id="dontKnow">
               <label class="radio__label" for="dontKnow">Не знаю (Нужен ваш совет)</label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="form__section">
-            <h2 class="form__title">Контактные данные (владельца кота)</h2>
+          <div class="form__title">
+            <span class="form__title-txt form__title-txt--contacts">Контактные данные (владельца кота)</span>
+          </div>
+          <fieldset class="form__fieldset">
             <div class="form__row">
               <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__field" type="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com">
             </div>
             <div class="form__row">
               <label class="form__label" for="phone">Телефон:*</label>
-              <input class="form__field" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+              <input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90">
             </div>
-          </div>
+          </fieldset>
 
-          <h2 class="form__title">Комментарий</h2>
-          <textarea class="form__textarea" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <div class="form__title">
+            <span class="form__title-txt form__title-txt--comment">Комментарий</span>
+          </div>
+          <fieldset class="form__fieldset">
+            <textarea class="form__field form__field--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
 
-          <h2 class="form__title">Дополнительно</h2>
-          <div class="form__checkbox checkbox">
-            <input type="checkbox" name="productMore" class="checkbox__input" id="sweetener">
-            <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+          <div class="form__title form__title--additionally">
+            <span class="form__title-txt form__title-txt--additionally">Дополнительно</span>
           </div>
-          <div class="form__checkbox checkbox">
-            <input type="checkbox" name="productMore" class="checkbox__input" id="water">
-            <label class="checkbox__label" for="water">питьевая вода</label>
-          </div>
-          <div class="form__checkbox checkbox">
-            <input type="checkbox" name="productMore" class="checkbox__input" id="milk">
-            <label class="checkbox__label" for="milk">молоко</label>
-          </div>
-          <div class="form__checkbox checkbox">
-            <input type="checkbox" name="productMore" class="checkbox__input" id="vitamins">
-            <label class="checkbox__label" for="vitamins">витамины</label>
-          </div>
+          <fieldset class="form__fieldset">
+            <div class="form__checkbox checkbox">
+              <input type="checkbox" name="productMore" class="checkbox__input" id="sweetener" checked>
+              <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+            </div>
+            <div class="form__checkbox checkbox">
+              <input type="checkbox" name="productMore" class="checkbox__input" id="water">
+              <label class="checkbox__label" for="water">питьевая вода</label>
+            </div>
+            <div class="form__checkbox checkbox">
+              <input type="checkbox" name="productMore" class="checkbox__input" id="milk">
+              <label class="checkbox__label" for="milk">молоко</label>
+            </div>
+            <div class="form__checkbox checkbox">
+              <input type="checkbox" name="productMore" class="checkbox__input" id="vitamins">
+              <label class="checkbox__label" for="vitamins">витамины</label>
+            </div>
+          </fieldset>
 
           <button type="submit" class="form__btn button">отправить заявку</button>
           <p class="form__note">* — Обязательные поля</p>
         </form>
       </div>
 
-      <div class="section section--grey contacts">
+      <div class="contacts contacts--grey">
         <div class="container">
           <div class="contacts__header">
-            <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__offer">
+              <span class="contacts__offer-top">приглашаем</span>
+              к&nbsp;сотрудничеству дилеров!</p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
 
         <div class="contacts__map map">
           <div class="map__pin">
-            <img src="img/map-pin.png" alt="">
+            <img src="img/map-pin.png" class="map__pin-icon" alt="">
           </div>
-          <img src="img/map.jpg" alt="">
+          <img src="img/map.jpg" class="map__img" alt="">
         </div>
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
-        <a class="logo">
+      <div class="container page-footer__container">
+        <a class="page-footer__logo logo">
           <img src="img/logo-txt.svg" width="128" height="24" alt="Кэт энерджи">
         </a>
 

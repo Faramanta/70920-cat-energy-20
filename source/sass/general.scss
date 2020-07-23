@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $special_dark-grey;
+  background-color: $white;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-header {
+  padding: 0 20px;
+}
+
+.title-h1 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  margin: 0;
+}
+
+.title-h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.title-line {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 20px;
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    right: 0;
+    z-index: 0;
+    content: "";
+    height: 2px;
+    background: $basic_green;
+  }
+}
+
+.title-line__txt {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 22px 0 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $black;
+  text-transform: none;
+  background: $white;
+}

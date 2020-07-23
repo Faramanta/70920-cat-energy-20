@@ -1,0 +1,40 @@
+.card-more {
+  padding: 13px 0 17px;
+  border-bottom: 1px solid $special_grey;
+
+  &:first-child {
+    border-top: 1px solid $special_grey;
+  }
+}
+
+.card-more__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.card-more__properties {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 0 0;
+}
+
+.card-more__properties-label,
+.card-more__properties-value {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.card-more__button {
+  width: 280px;
+  height: 40px;
+  margin: 15px auto 0;
+  font-size: 16px;
+  line-height: 0px;
+}

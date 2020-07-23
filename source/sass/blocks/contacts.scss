@@ -1,0 +1,34 @@
+.contacts {
+  &--grey {
+    background: $basic_grey ;
+  }
+}
+
+.contacts__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 0 25px;
+}
+
+.contacts__offer {
+  width: 50%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey-3;
+}
+
+.contacts__offer-top {
+  display: block;
+  margin: 0 0 3px;
+}
+
+.contacts__address {
+  width: 50%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: $special_dark-grey;
+}
