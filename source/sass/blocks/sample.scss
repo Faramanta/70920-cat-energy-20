@@ -6,8 +6,7 @@
 .sample__txt {
   margin: 33px 0 0;
   font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.3em;
   color: $special_dark-grey;
 }
 
@@ -18,10 +17,11 @@
 .sample__total {
   margin: 34px 0 0;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4em;
   text-align: center;
   color: $black;
   text-transform: uppercase;
+  font-family: $title_font_family;
 }
 
 .sample__slider {

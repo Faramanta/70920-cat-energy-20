@@ -4,21 +4,22 @@
   align-items: center;
 }
 
-.progress-bar__btn {
+.progress-bar__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
   width: 70px;
+  min-height: 40px;
   margin: 0;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25em;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   background: transparent;
   border: none;
   cursor: pointer;
+  font-family: $title_font_family;
 }
 
 .progress-bar__bar {

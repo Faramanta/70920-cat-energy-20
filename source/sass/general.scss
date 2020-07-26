@@ -23,16 +23,11 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   min-width: 320px;
-  min-height: 100vh;
   margin: 0;
   font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.3em;
+  font-family: $base_font_family;
   color: $special_dark-grey;
   background-color: $white;
 }
@@ -49,59 +44,20 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.container {
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.content-header {
-  padding: 0 20px;
-}
-
 .title-h1 {
   font-weight: normal;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1em;
   color: $black;
   margin: 0;
+  font-family: $title_font_family;
 }
 
 .title-h2 {
   margin: 0;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1em;
   font-weight: normal;
   color: #000000;
-}
-
-.title-line {
-  position: relative;
-  margin: 0;
-  padding: 0 0 0 20px;
-
-  &::before {
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    right: 0;
-    z-index: 0;
-    content: "";
-    height: 2px;
-    background: $basic_green;
-  }
-}
-
-.title-line__txt {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  padding: 0 22px 0 0;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-  color: $black;
-  text-transform: none;
-  background: $white;
+  font-family: $title_font_family;
 }

@@ -1,4 +1,4 @@
-.radio {
+.form-radio {
   position: relative;
   margin: 0 0 12px;
   padding: 6px 0 5px;
@@ -8,11 +8,11 @@
   }
 }
 
-.radio__input {
+.form-radio__input {
   display: none;
 
   &:checked {
-    & + .radio__label::after {
+    & + .form-radio__label::after {
       content: "";
       position: absolute;
       width: 14px;
@@ -25,13 +25,14 @@
   }
 }
 
-.radio__label {
+.form-radio__label {
   position: relative;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125em;
   text-transform: uppercase;
   color: $special_dark-grey-2;
   padding: 0 0 0 45px;
+  font-family: $title_font_family;
 
   &::before {
     content: "";

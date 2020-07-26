@@ -15,8 +15,9 @@
 .labels__title {
   margin: 0;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1em;
   color: $black;
+  font-family: $title_font_family;
 }
 
 .labels__txt {
@@ -26,8 +27,7 @@
   max-width: 70px;
   transform: translateX(50%);
   font-size: 12px;
-  line-height: 12px;
-  font-family: "Arial", sans-serif;
+  line-height: 1em;
   color: $special_dark-grey;
   background: $basic_grey-2;
 }

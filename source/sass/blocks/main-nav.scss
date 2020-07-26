@@ -1,5 +1,9 @@
+.main-nav {
+  display: none;
+}
+
 .main-nav__list {
-  @include no-list();
+  @include no-list;
   border-top: 1px solid $grey;
 }
 
@@ -12,9 +16,16 @@
   padding: 22px 0 23px;
   font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1em;
   color: #000000;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  font-family: $title_font_family;
+}
+
+.is-nav-open {
+  .main-nav {
+    display: block;
+  }
 }

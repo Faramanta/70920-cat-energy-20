@@ -10,10 +10,11 @@
 .card-more__title {
   margin: 0;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1em;
   font-weight: normal;
   color: $special_dark-grey-2;
   text-transform: uppercase;
+  font-family: $title_font_family;
 }
 
 .card-more__properties {
@@ -21,20 +22,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 13px 0 0;
-}
-
-.card-more__properties-label,
-.card-more__properties-value {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1em;
   color: $special_dark-grey;
 }
 
 .card-more__button {
   width: 280px;
-  height: 40px;
   margin: 15px auto 0;
-  font-size: 16px;
-  line-height: 0px;
 }

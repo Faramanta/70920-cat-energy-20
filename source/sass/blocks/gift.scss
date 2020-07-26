@@ -5,7 +5,7 @@
 .gift__inner {
   padding: 55px 56px 42px;
   text-align: center;
-  background: $basic_green  url("../../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  background: $basic_green  url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 }
 
 .gift__img {
@@ -14,9 +14,8 @@
 }
 
 .gift__txt {
-  font-family: "Arial", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25em;
   text-align: center;
   color: $white;
   margin: 52px auto 0;

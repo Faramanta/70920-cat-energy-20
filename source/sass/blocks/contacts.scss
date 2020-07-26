@@ -14,9 +14,10 @@
   width: 50%;
   margin: 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125em;
   text-transform: uppercase;
   color: $special_dark-grey-3;
+  font-family: $title_font_family;
 }
 
 .contacts__offer-top {
@@ -28,7 +29,6 @@
   width: 50%;
   margin: 0;
   font-size: 14px;
-  line-height: 20px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.4em;
   color: $special_dark-grey;
 }

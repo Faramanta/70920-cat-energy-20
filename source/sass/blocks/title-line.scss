@@ -1,0 +1,30 @@
+.title-line {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-family: $title_font_family;
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    right: 0;
+    z-index: 0;
+    content: "";
+    height: 2px;
+    background: $basic_green;
+  }
+}
+
+.title-line__txt {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 22px 0 0;
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: normal;
+  color: $black;
+  text-transform: none;
+  background: $white;
+}

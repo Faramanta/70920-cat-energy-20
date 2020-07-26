@@ -30,10 +30,11 @@
   max-width: 80px;
   margin: 0;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25em;
   font-weight: normal;
   color: $special_dark-grey-2;
   text-transform: uppercase;
+  font-family: $title_font_family;
 
   &--column {
     max-width: 100%;
@@ -42,48 +43,28 @@
 }
 
 .card__properties-list {
-  @include no-list();
+  @include no-list;
   margin: 15px 0 0;
 }
 
 .card__properties-item {
   display: flex;
   justify-content: space-between;
-}
-
-.card__properties-label,
-.card__properties-value {
   margin: 0;
   font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.3em;
   color: $special_dark-grey;
 }
 
 .card__button {
   margin: 10px auto 0;
   width: 280px;
-  height: 40px;
-  font-size: 16px;
-  line-height: 0;
 }
 
 .card__txt {
   margin: 9px 0 0;
   font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.3em;
   text-align: center;
   color: $special_dark-grey;
-}
-
-.catalog__button-more {
-  width: 279px;
-  height: 40px;
-  margin: 20px auto 0;
-  font-size: 16px;
-  line-height: 0px;
-  color: $special_dark-grey;
-  text-transform: uppercase;
-  background: $basic_grey;
 }

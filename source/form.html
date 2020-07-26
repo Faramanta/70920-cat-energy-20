@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '');</script>
   </head>
 
-  <body class="show-main-nav">
+  <body class="is-nav-open">
     <header class="page-header">
       <div class="container page-header__container">
         <a href="index.html" class="page-header__logo logo">
           <img src="img/logo-mobile.svg"  width="191" height="39" alt="Кэт энерджи">
         </a>
 
-        <button class="page-header__toggle burger burger--open" type="button">
-          <span class="burger__line"></span>
+        <button class="page-header__toggle toggle-nav-button toggle-nav-button--open" type="button">
+          <span class="toggle-nav-button__icon"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -23,13 +25,13 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="index.html" class="main-nav__list-link main-nav__list-link--active">главная</a>
+            <a href="index.html" class="main-nav__list-link">главная</a>
           </li>
           <li class="main-nav__list-item">
             <a href="catalog.html" class="main-nav__list-link">каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <span class="main-nav__list-link">подбор программы</span>
+            <span class="main-nav__list-link main-nav__list-link--active">подбор программы</span>
           </li>
         </ul>
       </nav>
@@ -60,17 +62,17 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--border">
-            <div class="form__radio radio">
-              <input type="radio" name="program" class="radio__input" id="slimming" checked>
-              <label class="radio__label" for="slimming">похудение</label>
+            <div class="form__radio form-radio">
+              <input type="radio" name="program" class="form-radio__input" id="slimming" checked>
+              <label class="form-radio__label" for="slimming">похудение</label>
             </div>
-            <div class="form__radio radio">
-              <input type="radio" name="program" class="radio__input" id="weightGain">
-              <label class="radio__label" for="weightGain">Набор массы</label>
+            <div class="form__radio form-radio">
+              <input type="radio" name="program" class="form-radio__input" id="weightGain">
+              <label class="form-radio__label" for="weightGain">Набор массы</label>
             </div>
-            <div class="form__radio radio">
-              <input type="radio" name="program" class="radio__input" id="dontKnow">
-              <label class="radio__label" for="dontKnow">Не знаю (Нужен ваш совет)</label>
+            <div class="form__radio form-radio">
+              <input type="radio" name="program" class="form-radio__input" id="dontKnow">
+              <label class="form-radio__label" for="dontKnow">Не знаю (Нужен ваш совет)</label>
             </div>
           </fieldset>
 
@@ -99,25 +101,25 @@
             <span class="form__title-txt form__title-txt--additionally">Дополнительно</span>
           </div>
           <fieldset class="form__fieldset">
-            <div class="form__checkbox checkbox">
-              <input type="checkbox" name="productMore" class="checkbox__input" id="sweetener" checked>
-              <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+            <div class="form__checkbox form-checkbox">
+              <input type="checkbox" name="productMore" class="form-checkbox__input" id="sweetener" checked>
+              <label class="form-checkbox__label" for="sweetener">сахарозаменитель</label>
             </div>
-            <div class="form__checkbox checkbox">
-              <input type="checkbox" name="productMore" class="checkbox__input" id="water">
-              <label class="checkbox__label" for="water">питьевая вода</label>
+            <div class="form__checkbox form-checkbox">
+              <input type="checkbox" name="productMore" class="form-checkbox__input" id="water">
+              <label class="form-checkbox__label" for="water">питьевая вода</label>
             </div>
-            <div class="form__checkbox checkbox">
-              <input type="checkbox" name="productMore" class="checkbox__input" id="milk">
-              <label class="checkbox__label" for="milk">молоко</label>
+            <div class="form__checkbox form-checkbox">
+              <input type="checkbox" name="productMore" class="form-checkbox__input" id="milk">
+              <label class="form-checkbox__label" for="milk">молоко</label>
             </div>
-            <div class="form__checkbox checkbox">
-              <input type="checkbox" name="productMore" class="checkbox__input" id="vitamins">
-              <label class="checkbox__label" for="vitamins">витамины</label>
+            <div class="form__checkbox form-checkbox">
+              <input type="checkbox" name="productMore" class="form-checkbox__input" id="vitamins">
+              <label class="form-checkbox__label" for="vitamins">витамины</label>
             </div>
           </fieldset>
 
-          <button type="submit" class="form__btn button">отправить заявку</button>
+          <button type="submit" class="form__button button">отправить заявку</button>
           <p class="form__note">* — Обязательные поля</p>
         </form>
       </div>

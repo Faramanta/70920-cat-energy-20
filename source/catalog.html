@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '');</script>
   </head>
 
-  <body class="show-main-nav">
+  <body class="is-nav-open">
     <header class="page-header">
       <div class="container page-header__container">
         <a href="index.html" class="page-header__logo logo">
           <img src="img/logo-mobile.svg"  width="191" height="39" alt="Кэт энерджи">
         </a>
 
-        <button class="page-header__toggle burger burger--open" type="button">
-          <span class="burger__line"></span>
+        <button class="page-header__toggle toggle-nav-button toggle-nav-button--open" type="button">
+          <span class="toggle-nav-button__icon"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -23,10 +25,10 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="index.html" class="main-nav__list-link main-nav__list-link--active">главная</a>
+            <a href="index.html" class="main-nav__list-link">главная</a>
           </li>
           <li class="main-nav__list-item">
-            <span class="main-nav__list-link">каталог продукции</span>
+            <span class="main-nav__list-link main-nav__list-link--active">каталог продукции</span>
           </li>
           <li class="main-nav__list-item">
             <a href="form.html" class="main-nav__list-link">подбор программы</a>
@@ -216,7 +218,7 @@
             <img src="https://via.placeholder.com/30x30" class="card__imd card__imd--column">
             <p class="card__title card__title--column">Показать еще 100500 товаров</p>
             <p class="card__txt">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__button-more button" type="button">показать все</button>
+            <button class="catalog__button-more button button--grey" type="button">показать все</button>
           </article>
         </div>
       </div>

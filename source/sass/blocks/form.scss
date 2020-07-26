@@ -32,10 +32,11 @@
 .form__label {
   margin: 0 14px 0 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125em;
   color: $special_dark-grey;
   text-transform: uppercase;
   flex-shrink: 0;
+  font-family: $title_font_family;
 }
 
 .form__field {
@@ -43,11 +44,12 @@
   height: 45px;
   padding: 10px 13px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125em;
   color: $special_dark-grey;
   text-transform: uppercase;
   border: 1px solid $basic_grey-3;
   box-sizing: border-box;
+  font-family: $title_font_family;
 
   &--textarea {
     height: 150px;
@@ -56,13 +58,13 @@
   }
 
   &--email {
-    background-image: url("../../img/icon_email.svg");
+    background-image: url("../img/icon_email.svg");
     background-position: calc(100% - 14px) center;
     background-repeat: no-repeat;
   }
 
   &--phone {
-    background-image: url("../../img/icon-phone2.svg");
+    background-image: url("../img/icon-phone2.svg");
     background-position: calc(100% - 12px) center;
     background-repeat: no-repeat;
   }
@@ -72,6 +74,7 @@
   position: relative;
   margin: 27px 0 0;
   padding: 0 0 0 20px;
+  font-family: $title_font_family;
 
   &::before {
     position: absolute;
@@ -94,38 +97,24 @@
   z-index: 2;
   display: inline-block;
   font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
+  line-height: 1em;
   color: $black;
-  text-transform: none;
   background: $white;
-
-  &--contacts {
-    width: 200px;
-  }
-
-  &--comment {
-    width: 143px;
-  }
-
-  &--additionally {
-    width: 163px;
-  }
+  max-width: 198px;
+  padding: 0 15px 0 0;
 }
 
-.form__btn {
+.form__button {
   width: 280px;
-  height: 40px;
   margin: 34px auto 0;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25em;
 }
 
 .form__note {
   margin: 21px auto 0;
   font-size: 14px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.1em;
   color: #000000;
   text-align: center;
 }

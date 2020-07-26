@@ -3,7 +3,7 @@
 }
 
 .about__list {
-  @include no-list();
+  @include no-list;
   margin: 38px 0 0;
 }
 
@@ -29,10 +29,9 @@
 }
 
 .about__txt {
-  width: calc(100% - 80px);
+  width: 100%;
   margin: 0;
   font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.3em;
   color: $special_dark-grey;
 }

@@ -5,7 +5,7 @@
 }
 
 .social__list {
-  @include no-list();
+  @include no-list;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +23,14 @@
   height: 23px;
 
   &--vk {
-    background: url("../../img/icons/icon_vkontakte.svg") no-repeat center;
+    background: url("../img/icons/icon_vkontakte.svg") no-repeat center;
   }
 
   &--fb {
-    background: url("../../img/icons/icon_facebook.svg") no-repeat center;
+    background: url("../img/icons/icon_facebook.svg") no-repeat center;
   }
 
   &--insta {
-    background: url("../../img/icons/icon_instagram.svg") no-repeat center;
+    background: url("../img/icons/icon_instagram.svg") no-repeat center;
   }
 }

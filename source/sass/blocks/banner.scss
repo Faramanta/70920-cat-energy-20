@@ -1,6 +1,6 @@
 .banner {
   padding: 27px 0 22px;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
@@ -9,19 +9,21 @@
 .banner__title {
   margin: 0 auto;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1em;
   font-weight: normal;
   text-align: center;
   color: $white;
+  font-family: $title_font_family;
 }
 
 .banner__slogan {
   margin: 25px auto 0;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1em;
   color: $white;
   text-align: center;
   text-transform: uppercase;
+  font-family: $title_font_family;
 }
 
 .banner__img {
@@ -29,10 +31,8 @@
   margin: 29px auto 0;
 }
 
-.banner__btn {
+.banner__button {
   width: 280px;
-  height: 40px;
   margin: 0 auto;
   font-size: 14px;
-  line-height: 18px;
 }

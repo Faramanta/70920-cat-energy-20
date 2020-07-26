@@ -18,10 +18,11 @@
   margin: 0;
   padding: 0 0 0 71px;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 1.5em;
   font-weight: normal;
   color: $black;
   text-transform: uppercase;
+  font-family: $title_font_family;
 
   &::before {
     position: absolute;
@@ -35,30 +36,28 @@
     content: "";
   }
 
-  &--slim::after {
+  &::after {
     position: absolute;
-    left: 1px;
-    top: 50%;
     z-index: 10;
+    left: -7px;
     display: block;
-    width: 50px;
+    width: 67px;
     height: 53px;
-    margin-top: -30px;
-    background: url("../../img/icon-cat-slim.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     content: "";
   }
 
+  &--slim::after {
+    top: -12px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-size: 36px auto;
+  }
+
   &--pro::after {
-    position: absolute;
-    left: -7px;
-    top: 50%;
-    z-index: 10;
-    display: block;
-    width: 67px;
-    height: 28px;
-    margin-top: -14px;
-    background: url("../../img/icon-cat-pro.svg") no-repeat center;
-    content: "";
+    top: -9px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-size: 67px auto;
   }
 }
 
@@ -66,8 +65,7 @@
   margin: 29px 0 0;
   padding: 0 0 22px;
   font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
+  line-height: 1.3em;
   color: $special_dark-grey;
   border-bottom: 1px solid $special_grey-1;
 }
@@ -77,10 +75,11 @@
   display: inline-block;
   padding: 19px 39px 12px 0;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1em;
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: $title_font_family;
 
   &::after {
     position: absolute;
@@ -89,7 +88,7 @@
     width: 24px;
     height: 12px;
     margin-top: -3px;
-    background: url("../../img/icons/arrow-right.svg") no-repeat;
+    background: url("../img/icons/arrow-right.svg") no-repeat;
     content: "";
   }
 }
