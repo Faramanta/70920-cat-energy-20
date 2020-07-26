@@ -1,0 +1,120 @@
+.form {
+  padding: 19px 0 31px;
+}
+
+.form__section {
+  padding: 0 20px 0;
+  border-bottom: 1px solid $special_grey-1;
+}
+
+.form__fieldset {
+  margin: 0 0 0;
+  padding: 32px 20px 1px;
+  border: none;
+
+  &--border {
+    padding: 20px 20px 22px;
+    border-bottom: 1px solid $special_grey-1;
+  }
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 14px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form__label {
+  margin: 0 14px 0 0;
+  font-size: 16px;
+  line-height: 1.125em;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  font-family: $title_font_family;
+}
+
+.form__field {
+  width: 100%;
+  height: 45px;
+  padding: 10px 13px;
+  font-size: 16px;
+  line-height: 1.125em;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  border: 1px solid $basic_grey-3;
+  box-sizing: border-box;
+  font-family: $title_font_family;
+
+  &--textarea {
+    height: 150px;
+    margin: 2px 0 0;
+    padding: 13px 13px;
+  }
+
+  &--email {
+    background-image: url("../img/icon_email.svg");
+    background-position: calc(100% - 14px) center;
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone2.svg");
+    background-position: calc(100% - 12px) center;
+    background-repeat: no-repeat;
+  }
+}
+
+.form__title {
+  position: relative;
+  margin: 27px 0 0;
+  padding: 0 0 0 20px;
+  font-family: $title_font_family;
+
+  &::before {
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    right: 0;
+    z-index: 0;
+    content: "";
+    height: 2px;
+    background: $basic_green;
+  }
+
+  &--additionally {
+    margin: 23px 0 0;
+  }
+}
+
+.form__title-txt {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1em;
+  color: $black;
+  background: $white;
+  max-width: 198px;
+  padding: 0 15px 0 0;
+}
+
+.form__button {
+  width: 280px;
+  margin: 34px auto 0;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+.form__note {
+  margin: 21px auto 0;
+  font-size: 14px;
+  line-height: 1.1em;
+  color: #000000;
+  text-align: center;
+}

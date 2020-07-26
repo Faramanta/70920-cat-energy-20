@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.copyright__txt {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.125em;
+  color: $special_dark-grey;
+}

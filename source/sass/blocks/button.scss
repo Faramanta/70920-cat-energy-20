@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.25em;
+  font-weight: normal;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $basic_green;
+  border: none;
+  font-family: $title_font_family;
+
+  &--grey {
+    color: $special_dark-grey;
+    background: $basic_grey;
+  }
+}

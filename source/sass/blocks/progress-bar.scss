@@ -1,0 +1,45 @@
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  min-height: 40px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $title_font_family;
+}
+
+.progress-bar__bar {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin: 0 2px;
+  background: $white;
+  border: 1px solid $special_grey;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.progress-bar__value {
+  position: absolute;
+  height: 6px;
+  width: 35px;
+  left: 6px;
+  top: 50%;
+  margin-top: -3px;
+  background: $basic_green;
+  border-radius: 6px;
+}

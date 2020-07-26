@@ -1,0 +1,36 @@
+.social {
+  padding: 20px 0 19px;
+  border-top: 1px solid $special_grey-1;
+  border-bottom: 1px solid $special_grey-1;
+}
+
+.social__list {
+  @include no-list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 0;
+}
+
+.social__link {
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  &--vk {
+    background: url("../img/icons/icon_vkontakte.svg") no-repeat center;
+  }
+
+  &--fb {
+    background: url("../img/icons/icon_facebook.svg") no-repeat center;
+  }
+
+  &--insta {
+    background: url("../img/icons/icon_instagram.svg") no-repeat center;
+  }
+}

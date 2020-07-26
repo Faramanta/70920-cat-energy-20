@@ -1,0 +1,44 @@
+.form-checkbox {
+  position: relative;
+  margin: 0 0 12px;
+  padding: 6px 0 5px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.form-checkbox__input {
+  display: none;
+
+  &:checked + .form-checkbox__label::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    width: 28px;
+    height: 28px;
+    background: url("../img/icon-check.svg") no-repeat center;
+  }
+}
+
+.form-checkbox__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.125em;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+  padding: 0 0 0 45px;
+  font-family: $title_font_family;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: $white;
+    border: 1px solid $special_grey;
+  }
+}
