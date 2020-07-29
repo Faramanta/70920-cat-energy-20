@@ -35,7 +35,7 @@
 .form-checkbox__label {
   position: relative;
   font-size: 16px;
-  line-height: 1.125em;
+  line-height: (18 / 16);
   text-transform: uppercase;
   color: $special_dark-grey-2;
   padding: 0 0 0 45px;

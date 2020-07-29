@@ -32,7 +32,7 @@
   width: 50%;
   margin: 0;
   font-size: 16px;
-  line-height: 1.125em;
+  line-height: (18 / 16);
   text-transform: uppercase;
   color: $special_dark-grey-3;
   font-family: $title_font_family;
@@ -47,6 +47,6 @@
   width: 50%;
   margin: 0;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: (20 / 14);
   color: $special_dark-grey;
 }

@@ -34,7 +34,7 @@
 .labels__title {
   margin: 0;
   font-size: 24px;
-  line-height: 1em;
+  line-height: 1;
   color: $black;
   font-family: $title_font_family;
 }
@@ -46,7 +46,7 @@
   max-width: 70px;
   transform: translateX(50%);
   font-size: 12px;
-  line-height: 1em;
+  line-height: 1;
   color: $special_dark-grey;
   background: $basic_grey-2;
 
@@ -58,7 +58,7 @@
 .labels__total {
   margin: 34px 0 0;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: (20 / 14);
   text-align: center;
   color: $black;
   text-transform: uppercase;

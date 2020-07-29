@@ -22,7 +22,7 @@
 .sample__txt {
   margin: 33px 0 0;
   font-size: 14px;
-  line-height: 1.3em;
+  line-height: (18 / 14);
   color: $special_dark-grey;
 }
 
