@@ -1,3 +1,10 @@
 .logo {
   display: inline-block;
 }
+
+.logo__img {
+  @media screen and (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+}

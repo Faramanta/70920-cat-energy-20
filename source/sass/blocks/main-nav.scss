@@ -5,10 +5,25 @@
 .main-nav__list {
   @include no-list;
   border-top: 1px solid $grey;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    border-top: none;
+  }
 }
 
 .main-nav__list-item {
   border-bottom: 1px solid $grey;
+
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: none;
+    margin: 0 0 0 34px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
 }
 
 .main-nav__list-link {
@@ -22,6 +37,10 @@
   text-align: center;
   text-transform: uppercase;
   font-family: $title_font_family;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 0 12px;
+  }
 }
 
 .is-nav-open {

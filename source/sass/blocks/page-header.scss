@@ -1,6 +1,22 @@
+.page-header {
+  padding: 7px 0 0;
+}
+
 .page-header__container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   min-height: 66px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header__main-nav {
+  margin: 12px -20px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

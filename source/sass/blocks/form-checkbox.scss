@@ -6,6 +6,16 @@
   &:last-child {
     margin: 0;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0 0 32px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 25%;
+    margin: 0 0 32px;
+  }
 }
 
 .form-checkbox__input {

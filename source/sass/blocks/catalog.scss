@@ -2,11 +2,34 @@
   padding: 33px 0 0;
 }
 
+.catalog .container {
+  padding: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
 .catalog__list {
   margin: 40px 0 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 63px 80px;
+  }
 }
 
 .catalog__button-more {
   width: 280px;
   margin: 20px auto 0;
+
+  @media screen and (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

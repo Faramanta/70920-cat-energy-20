@@ -5,15 +5,57 @@
 .about__list {
   @include no-list;
   margin: 38px 0 0;
+  counter-reset: myCounter;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 154px;
+    max-width: 650px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 75px;
+    max-width: 100%;
+  }
 }
 
 .about__item {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0 0 20px;
 
   &:last-child {
+    margin: 0;
+  }
+
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      font-size: 280px;
+      line-height: 1;
+      color: $basic_grey;
+      font-family: $title_font_family;
+      z-index: -1;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 280px;
+
+    &:nth-child(2n) {
+      margin: 0 0 37px 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
     margin: 0;
   }
 }

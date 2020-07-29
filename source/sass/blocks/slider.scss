@@ -1,3 +1,18 @@
+.slider {
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 690px;
+  }
+}
+
 .slider__progress-bar {
   margin: 19px 0 0;
+}
+
+.slider__img {
+  display: block;
+  margin: auto;
+  width: 100%;
 }

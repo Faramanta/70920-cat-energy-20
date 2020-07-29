@@ -1,38 +1,101 @@
 .banner {
+  position: relative;
   padding: 27px 0 22px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 27px 0 520px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 27px 0 270px;
+  }
+}
+
+.banner .container {
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 584px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 1090px;
+  }
 }
 
 .banner__title {
-  margin: 0 auto;
+  margin: 0;
   font-size: 36px;
-  line-height: 1em;
+  line-height: 1;
   font-weight: normal;
   text-align: center;
   color: $white;
   font-family: $title_font_family;
+
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 60px;
+    line-height: 1;
+    max-width: 414px;
+    color: $black;
+  }
 }
 
 .banner__slogan {
-  margin: 25px auto 0;
+  margin: 25px 0 0;
   font-size: 14px;
-  line-height: 1em;
+  line-height: 1;
   color: $white;
   text-align: center;
   text-transform: uppercase;
   font-family: $title_font_family;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 41px 0 0;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    color: $black;
+  }
 }
 
 .banner__img {
   display: block;
   margin: 29px auto 0;
+
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    width: 666px;
+    height: auto;
+    right: 50%;
+    margin-right: -333px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 552px;
+    left: 368px;
+    top: 0;
+    right: auto;
+    margin-right: 0;
+  }
 }
 
 .banner__button {
   width: 280px;
   margin: 0 auto;
   font-size: 14px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 49px 0 0 -6px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+  }
 }

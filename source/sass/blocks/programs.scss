@@ -1,34 +1,48 @@
 .programs__list {
   @include no-list;
+
+  @media screen and (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
 }
 
 .programs__item {
+  position: relative;
   display: block;
   margin: 0 0 20px;
-  padding: 30px 20px 10px 20px;
+  padding: 22px 20px 10px 21px;
   background: $basic_grey;
 
   &:last-child {
     margin: 0;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 77px 280px 53px 52px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    padding: 41px 50px 55px;
+  }
 }
 
-.programs__title {
+.programs__icon {
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
-  margin: 0;
-  padding: 0 0 0 71px;
-  font-size: 24px;
-  line-height: 1.5em;
-  font-weight: normal;
-  color: $black;
-  text-transform: uppercase;
-  font-family: $title_font_family;
+  width: 67px;
+  height: 53px;
+  margin: 0 6px 0 -6px;
 
   &::before {
     position: absolute;
-    left: 2px;
+    left: 50%;
     top: 50%;
     margin-top: -25px;
+    margin-left: -25px;
     width: 50px;
     height: 50px;
     background: $basic_green;
@@ -39,30 +53,53 @@
   &::after {
     position: absolute;
     z-index: 10;
-    left: -7px;
     display: block;
-    width: 67px;
-    height: 53px;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
     content: "";
   }
 
   &--slim::after {
-    top: -12px;
     background-image: url("../img/icon-cat-slim.svg");
     background-size: 36px auto;
+    background-position: 15px -1px;
   }
 
   &--pro::after {
-    top: -9px;
     background-image: url("../img/icon-cat-pro.svg");
     background-size: 67px auto;
+    background-position: center;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    position: relative;
+    right: auto;
   }
 }
 
+.programs__title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 0 0;
+  font-size: 24px;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: $black;
+  text-transform: uppercase;
+  font-family: $title_font_family;
+  width: auto;
+}
+
 .programs__txt {
-  margin: 29px 0 0;
+  margin: 21px 0 0;
   padding: 0 0 22px;
   font-size: 14px;
   line-height: 1.3em;
