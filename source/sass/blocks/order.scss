@@ -2,8 +2,12 @@
   max-width: 230px;
   margin: 37px 0 0;
   font-size: 14px;
-  line-height: 1.3em;
+  line-height: (18 / 14);
   color: $black;
   text-transform: uppercase;
   font-family: $title_font_family;
+}
+
+.order__form {
+  margin: 0 auto;
 }

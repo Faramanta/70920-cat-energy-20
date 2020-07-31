@@ -26,7 +26,7 @@ body {
   min-width: 320px;
   margin: 0;
   font-size: 14px;
-  line-height: 1.3em;
+  line-height: (18 / 14);
   font-family: $base_font_family;
   color: $special_dark-grey;
   background-color: $white;
@@ -47,7 +47,7 @@ body {
 .title-h1 {
   font-weight: normal;
   font-size: 36px;
-  line-height: 1em;
+  line-height: 1;
   color: $black;
   margin: 0;
   font-family: $title_font_family;
@@ -56,8 +56,13 @@ body {
 .title-h2 {
   margin: 0;
   font-size: 36px;
-  line-height: 1.1em;
+  line-height: (40 / 36);
   font-weight: normal;
-  color: #000000;
+  color: $black;
   font-family: $title_font_family;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }

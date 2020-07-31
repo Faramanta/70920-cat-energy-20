@@ -1,12 +1,28 @@
 .sample {
   padding: 27px 0 26px;
   background: $basic_grey-2;
+
+  @media (min-width: $tablet-width) {
+    background: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.sample__content {
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    height: 656px; // временно
+    margin: 0;
+  }
 }
 
 .sample__txt {
   margin: 33px 0 0;
   font-size: 14px;
-  line-height: 1.3em;
+  line-height: (18 / 14);
   color: $special_dark-grey;
 }
 
@@ -14,16 +30,10 @@
   margin: 25px 0 0;
 }
 
-.sample__total {
-  margin: 34px 0 0;
-  font-size: 14px;
-  line-height: 1.4em;
-  text-align: center;
-  color: $black;
-  text-transform: uppercase;
-  font-family: $title_font_family;
-}
-
 .sample__slider {
-  margin: 42px 0 0;
+  margin: 42px -20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 42px auto 0;
+  }
 }

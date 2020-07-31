@@ -5,12 +5,19 @@
   &:first-child {
     border-top: 1px solid $special_grey;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .card-more__title {
   margin: 0;
   font-size: 16px;
-  line-height: 1em;
+  line-height: 1;
   font-weight: normal;
   color: $special_dark-grey-2;
   text-transform: uppercase;
@@ -23,11 +30,30 @@
   align-items: center;
   margin: 13px 0 0;
   font-size: 14px;
-  line-height: 1em;
+  line-height: 1;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.card-more__properties-value {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 50px;
+  }
 }
 
 .card-more__button {
   width: 280px;
   margin: 15px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin: 0;
+  }
 }

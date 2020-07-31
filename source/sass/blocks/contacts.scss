@@ -1,20 +1,38 @@
 .contacts {
-  &--grey {
-    background: $basic_grey;
-  }
+  position: relative;
 }
 
 .contacts__header {
   display: flex;
   justify-content: space-between;
-  padding: 29px 0 25px;
+  padding: 29px 20px 25px;
+
+  &--grey {
+    background: $basic_grey;
+
+    @media (min-width: $desktop-width) {
+      background: $white;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    width: 570px;
+    height: 200px;
+    background: $white;
+    z-index: 10;
+  }
 }
 
 .contacts__offer {
   width: 50%;
   margin: 0;
   font-size: 16px;
-  line-height: 1.125em;
+  line-height: (18 / 16);
   text-transform: uppercase;
   color: $special_dark-grey-3;
   font-family: $title_font_family;
@@ -29,6 +47,6 @@
   width: 50%;
   margin: 0;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: (20 / 14);
   color: $special_dark-grey;
 }

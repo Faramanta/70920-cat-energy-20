@@ -1,7 +1,11 @@
 .social {
-  padding: 20px 0 19px;
   border-top: 1px solid $special_grey-1;
   border-bottom: 1px solid $special_grey-1;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .social__list {
@@ -14,7 +18,7 @@
 .social__item {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 15px 0;
+  padding: 20px 15px 19px;
 }
 
 .social__link {
