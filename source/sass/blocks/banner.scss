@@ -6,12 +6,12 @@
   background-position: top center;
   background-size: 100% auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 27px 0 520px;
     background-image: none;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 27px 0 270px;
   }
 }
@@ -21,7 +21,7 @@
   margin: 0 auto;
   padding: 0 110px;
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1090px;
   }
 }
@@ -35,7 +35,7 @@
   color: $white;
   font-family: $title_font_family;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 60px;
     max-width: 414px;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-family: $title_font_family;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 41px 0 0;
     font-size: 20px;
     line-height: 1;
@@ -66,7 +66,7 @@
   display: block;
   margin: 29px auto 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
     right: 50%;
@@ -76,7 +76,7 @@
     height: auto;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 552px;
     left: 368px;
     top: 0;
@@ -90,7 +90,7 @@
   margin: 0 auto;
   font-size: 14px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 49px 0 0;
     width: 244px;
     height: 54px;

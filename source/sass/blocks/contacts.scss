@@ -10,12 +10,12 @@
   &--grey {
     background: $basic_grey;
 
-    @media screen and (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       background: $white;
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 50%;
     right: 50%;

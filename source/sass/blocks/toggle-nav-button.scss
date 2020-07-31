@@ -11,7 +11,7 @@
   height: 24px;
   padding: 4px 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
 .programs__list {
   @include no-list;
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
@@ -19,11 +19,11 @@
     margin: 0;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 77px 280px 53px 52px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 41px 50px 55px;
   }
@@ -72,12 +72,12 @@
     background-position: center;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
     right: auto;
   }

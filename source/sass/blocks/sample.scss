@@ -2,17 +2,17 @@
   padding: 27px 0 26px;
   background: $basic_grey-2;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background: $white;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
   }
 }
 
 .sample__content {
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 436px;
     height: 656px; // временно
     margin: 0;
@@ -33,7 +33,7 @@
 .sample__slider {
   margin: 42px -20px 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 42px auto 0;
   }
 }

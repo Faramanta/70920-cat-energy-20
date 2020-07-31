@@ -7,7 +7,7 @@
   flex-direction: column;
   min-height: 66px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -16,7 +16,7 @@
 .page-header__main-nav {
   margin: 12px -20px 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }

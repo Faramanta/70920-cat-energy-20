@@ -61,7 +61,7 @@ body {
   color: $black;
   font-family: $title_font_family;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
   }
