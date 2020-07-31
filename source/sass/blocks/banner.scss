@@ -18,11 +18,8 @@
 
 .banner .container {
   position: relative;
-
-  @media screen and (min-width: $tablet-width) {
-    max-width: 584px;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+  padding: 0 110px;
 
   @media screen and (min-width: $desktop-width) {
     max-width: 1090px;
@@ -41,7 +38,6 @@
   @media screen and (min-width: $tablet-width) {
     text-align: left;
     font-size: 60px;
-    line-height: 1;
     max-width: 414px;
     color: $black;
   }
@@ -62,6 +58,7 @@
     line-height: 1;
     text-align: left;
     color: $black;
+    max-width: 500px;
   }
 }
 
@@ -72,10 +69,11 @@
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    width: 666px;
-    height: auto;
     right: 50%;
-    margin-right: -333px;
+    max-width: 100%;
+    width: 100%;
+    transform: translate(50%, 0);
+    height: auto;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -93,7 +91,7 @@
   font-size: 14px;
 
   @media screen and (min-width: $tablet-width) {
-    margin: 49px 0 0 -6px;
+    margin: 49px 0 0;
     width: 244px;
     height: 54px;
     font-size: 20px;

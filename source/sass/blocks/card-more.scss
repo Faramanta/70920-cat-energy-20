@@ -6,7 +6,7 @@
     border-top: 1px solid $special_grey;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,13 +33,13 @@
   line-height: 1;
   color: $special_dark-grey;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
 .card-more__properties-value {
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 0 50px;
   }
 }
@@ -48,11 +48,11 @@
   width: 280px;
   margin: 15px auto 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
   }

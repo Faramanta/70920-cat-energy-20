@@ -20,7 +20,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
   }
 }

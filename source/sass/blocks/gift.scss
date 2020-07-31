@@ -4,13 +4,13 @@
   background: $basic_green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   background-size: cover;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
     height: 289px;
@@ -21,7 +21,7 @@
   display: block;
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -33,7 +33,7 @@
   color: $white;
   margin: 52px auto 0;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }

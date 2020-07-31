@@ -1,11 +1,11 @@
 .catalog-more {
   padding: 28px 0 35px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 0 76px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 76px 0 86px;
   }
 }
@@ -13,7 +13,7 @@
 .catalog-more__wrapper {
   margin: 34px 0 0;
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 244px;
     column-gap: 79px;
