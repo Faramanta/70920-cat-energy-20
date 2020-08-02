@@ -15,6 +15,18 @@
   height: 53px;
   margin-top: -44px;
   margin-right: -28px;
+
+  @media (min-width: $tablet-width) {
+    width: 105px;
+    height: 104px;
+    top: calc(50% - 9px);
+    right: calc(50% - 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 24px);
+    right: calc(32% - 4px);
+  }
 }
 
 .map__pin-icon {

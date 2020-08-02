@@ -1,28 +1,33 @@
 .banner {
   position: relative;
-  padding: 27px 0 22px;
+  padding: 27px 0 0;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 520px;
+    padding: 48px 0 526px;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 0 270px;
+    padding: 106px 0 186px;
   }
 }
 
 .banner .container {
   position: relative;
   margin: 0 auto;
-  padding: 0 110px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 117px;
+  }
 
   @media (min-width: $desktop-width) {
-    max-width: 1090px;
+    max-width: 1100px;
+    padding: 0 20px;
   }
 }
 
@@ -60,6 +65,10 @@
     color: $black;
     max-width: 500px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px 0 0;
+  }
 }
 
 .banner__img {
@@ -70,24 +79,26 @@
     position: absolute;
     z-index: -1;
     right: 50%;
-    max-width: 100%;
+    max-width: 672px;
     width: 100%;
-    transform: translate(50%, 0);
     height: auto;
+    transform: translate(50%, 21px);
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    left: 368px;
-    top: 0;
-    right: auto;
+    left: auto;
+    top: -84px;
+    right: 160px;
     margin-right: 0;
+    transform: none;
   }
 }
 
 .banner__button {
   width: 280px;
-  margin: 0 auto;
+  margin: 3px auto 0;
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
@@ -95,5 +106,9 @@
     width: 244px;
     height: 54px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 51px 0 0;
   }
 }

@@ -1,39 +1,59 @@
 .sample {
   padding: 27px 0 26px;
-  background: $basic_grey-2;
+  background-color: $basic_grey-2;
 
   @media (min-width: $tablet-width) {
-    background: $white;
+    padding: 43px 0 64px;
+    background-image: linear-gradient(to bottom, $white 0, $white 57%, $basic_grey-2 57%, $basic_grey-2 100%);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding: 62px 0 74px;
+    background-image: linear-gradient(to bottom, $white 0, $white 30%, $basic_grey 30%, $basic_grey 100%);
   }
 }
 
 .sample__content {
   @media (min-width: $desktop-width) {
     max-width: 436px;
-    height: 656px; // временно
     margin: 0;
   }
 }
 
 .sample__txt {
-  margin: 33px 0 0;
+  margin: 37px 0 0;
   font-size: 14px;
   line-height: (18 / 14);
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 64px 0 0;
+    font-size: 16px;
+    line-height: (24 / 16);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 148px 0 0;
+  }
 }
 
 .sample__labels {
-  margin: 25px 0 0;
+  margin: 29px auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 53px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 68px 0 0;
+  }
 }
 
 .sample__slider {
   margin: 42px -20px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 42px auto 0;
+    margin: 108px -30px 0;
   }
 }

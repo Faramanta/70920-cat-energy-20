@@ -10,31 +10,58 @@
 
 .social__list {
   @include no-list;
+  margin: 12px 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
   display: inline-block;
   vertical-align: middle;
-  padding: 20px 15px 19px;
+  margin: 0 8px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 6px 0;
+  }
 }
 
 .social__link {
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &--vk {
-    background: url("../img/icons/icon_vkontakte.svg") no-repeat center;
+    background-image: url("../img/icons/icon_vkontakte.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 30px auto;
+      background-position: center 9px;
+    }
   }
 
   &--fb {
-    background: url("../img/icons/icon_facebook.svg") no-repeat center;
+    background-image: url("../img/icons/icon_facebook.svg");
+    background-position: 5px center;
+
+    @media (min-width: $tablet-width) {
+      background-size: 32px auto;
+      background-position: -1px 4px;
+    }
   }
 
   &--insta {
-    background: url("../img/icons/icon_instagram.svg") no-repeat center;
+    background-image: url("../img/icons/icon_instagram.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 24px auto;
+      background-position: center;
+    }
   }
 }
