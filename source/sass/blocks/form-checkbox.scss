@@ -8,12 +8,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    margin: 0 0 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -28,6 +24,11 @@
     width: 28px;
     height: 28px;
     background: url("../img/icon-check.svg") no-repeat center;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 5px;
+    }
   }
 }
 
@@ -49,5 +50,17 @@
     height: 30px;
     background: $white;
     border: 1px solid $special_grey;
+
+    @media (min-width: $tablet-width) {
+      top: -6px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 58px;
+    font-size: 20px;
+    line-height: (30 / 20);
   }
 }

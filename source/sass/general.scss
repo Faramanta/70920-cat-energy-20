@@ -58,6 +58,11 @@ body {
   color: $black;
   margin: 0;
   font-family: $title_font_family;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .title-h2 {

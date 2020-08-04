@@ -1,5 +1,6 @@
 .card-more {
-  padding: 13px 0 17px;
+  position: relative;
+  padding: 14px 0 17px;
   border-bottom: 1px solid $special_grey;
 
   &:first-child {
@@ -11,6 +12,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-right: 1px solid $special_grey;
+    border-left: 1px solid $special_grey;
+    padding: 26px 38px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-right: none;
+    border-left: none;
+    padding: 26px 285px 25px 0;
   }
 }
 
@@ -22,6 +32,10 @@
   color: $special_dark-grey-2;
   text-transform: uppercase;
   font-family: $title_font_family;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .card-more__properties {
@@ -34,7 +48,13 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 5px 0 0;
+    font-size: 16px;
+    line-height: (16 / 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 287px;
   }
 }
 
@@ -46,13 +66,16 @@
 
 .card-more__button {
   width: 280px;
-  margin: 15px auto 0;
+  margin: 14px auto 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin: 25px auto 0;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
     width: 244px;
     margin: 0;
   }

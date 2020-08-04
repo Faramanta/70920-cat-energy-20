@@ -5,4 +5,12 @@
 
 .page-main__form {
   padding: 27px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 0 0;
+  }
 }

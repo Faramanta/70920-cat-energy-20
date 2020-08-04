@@ -6,6 +6,17 @@
   color: $black;
   text-transform: uppercase;
   font-family: $title_font_family;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin: 55px 0 0 40px;
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 58px 0 0 0;
+  }
 }
 
 .order__form {
