@@ -191,7 +191,7 @@
   position: relative;
   display: inline-block;
   margin: 10px 0 0;
-  padding: 10px 39px 10px 0;
+  padding: 10px 59px 10px 0;
   font-size: 16px;
   line-height: 1;
   color: black;
@@ -202,12 +202,23 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 8px;
     width: 24px;
     height: 12px;
     margin-top: -6px;
-    background: url("../img/icons/arrow-right.svg") no-repeat;
+    background: url("../img/icons/arrow-right-32.svg") no-repeat;
+    background-position: 100% 0;
     content: "";
+    transition: right 0.3s, width 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    width: 32px;
+    right: 0;
   }
 
   @media (min-width: $tablet-width) {

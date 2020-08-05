@@ -29,6 +29,12 @@
         left: 11px;
       }
     }
+
+    &:active {
+      & + .form-radio__label::after {
+        background: transparentize($basic_green, 0.7);
+      }
+    }
   }
 }
 
@@ -40,6 +46,7 @@
   color: $special_dark-grey-2;
   padding: 0 0 0 45px;
   font-family: $title_font_family;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -56,6 +63,18 @@
       width: 40px;
       height: 40px;
       top: -5px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $special_grey-6;
+  }
+
+  &:active {
+    color: transparentize($special_dark-grey-2, 0.7);
+
+    &::before {
+      border-color: transparentize($special_grey-6, 0.7);
     }
   }
 

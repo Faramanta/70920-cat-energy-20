@@ -14,8 +14,26 @@
   border: none;
   font-family: $title_font_family;
 
-  &--grey {
-    color: $special_dark-grey;
-    background: $basic_grey;
+  &:hover {
+    background: $basic_green-2;
+  }
+
+  &:active {
+    background: $basic_green-2;
+    color: transparentize($white, 0.7);
+  }
+}
+
+.button--grey {
+  color: $special_dark-grey;
+  background: $basic_grey;
+
+  &:hover {
+    background: $special_grey-2;
+  }
+
+  &:active {
+    background: $special_grey-2;
+    color: transparentize($special_dark-grey, 0.7);
   }
 }

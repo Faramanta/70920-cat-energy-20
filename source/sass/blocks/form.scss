@@ -128,6 +128,21 @@
   border: 1px solid $basic_grey-3;
   box-sizing: border-box;
   font-family: $title_font_family;
+  outline: none;
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    border-color: $special_dark-grey;
+    box-shadow: 0 0 0 1px $special_dark-grey;
+  }
+
+  &.error {
+    border-color: $status_error;
+    box-shadow: 0 0 0 1px $status_error;
+  }
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -156,15 +171,32 @@
   background-position: calc(100% - 14px) center;
   background-repeat: no-repeat;
 
+  &:focus {
+    background-image: url("../img/icon_email-green.svg");
+  }
+
+  &.error {
+    background-image: url("../img/icon_email-red.svg");
+  }
+
   @media (min-width: $tablet-width) {
     background-position: calc(100% - 17px) center;
   }
 }
 
 .form__field--phone {
+  position: relative;
   background-image: url("../img/icon-phone2.svg");
   background-position: calc(100% - 12px) center;
   background-repeat: no-repeat;
+
+  &:focus {
+    background-image: url("../img/icon-phone2-green.svg");
+  }
+
+  &.error {
+    background-image: url("../img/icon-phone2-red.svg");
+  }
 
   @media (min-width: $tablet-width) {
     background-position: calc(100% - 17px) center;

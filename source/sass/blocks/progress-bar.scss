@@ -16,6 +16,14 @@
   border: none;
   cursor: pointer;
   font-family: $title_font_family;
+
+  &:hover .progress-bar__button-txt {
+    border-bottom: 1px solid transparentize($black, 0.6);
+  }
+
+  &:active .progress-bar__button-txt {
+    border-bottom: none;
+  }
 }
 
 .progress-bar__button-txt {
@@ -82,12 +90,21 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       content: "";
-      right: 13px;
-      top: 13px;
+      right: 12px;
+      top: 12px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background: $basic_green;
     }
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    border-color: $basic_green;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 }
