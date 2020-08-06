@@ -1,5 +1,13 @@
 .catalog {
-  padding: 33px 0 0;
+  padding: 27px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 49px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0 0;
+  }
 }
 
 .catalog .container {
@@ -17,6 +25,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    margin: 83px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +36,12 @@
 
 .catalog__button-more {
   width: 280px;
-  margin: 20px auto 0;
+  margin: 21px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin: 86px auto 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;

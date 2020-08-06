@@ -8,12 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 57px 115px 62px 80px;
+    background: $basic_green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
     height: 289px;
+    padding: 56px 42px 42px;
   }
 }
 
@@ -34,6 +37,12 @@
   margin: 52px auto 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 10px 0 0;
+    max-width: 170px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

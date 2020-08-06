@@ -1,5 +1,13 @@
 .page-header {
   padding: 7px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 0 0;
+  }
 }
 
 .page-header__container {

@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__txt {
@@ -10,4 +14,8 @@
   font-size: 16px;
   line-height: (18 / 16);
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 24px 0 0;
+  }
 }

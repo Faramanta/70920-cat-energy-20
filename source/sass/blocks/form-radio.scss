@@ -21,6 +21,19 @@
       left: 8px;
       background: $basic_green;
       border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+        top: 6px;
+        left: 11px;
+      }
+    }
+
+    &:active {
+      & + .form-radio__label::after {
+        background: transparentize($basic_green, 0.7);
+      }
     }
   }
 }
@@ -33,6 +46,7 @@
   color: $special_dark-grey-2;
   padding: 0 0 0 45px;
   font-family: $title_font_family;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -44,5 +58,29 @@
     background: $white;
     border: 1px solid $special_grey;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $special_grey-6;
+  }
+
+  &:active {
+    color: transparentize($special_dark-grey-2, 0.7);
+
+    &::before {
+      border-color: transparentize($special_grey-6, 0.7);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    line-height: (30 / 20);
   }
 }

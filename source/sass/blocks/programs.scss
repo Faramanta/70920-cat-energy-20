@@ -1,10 +1,18 @@
+.programs {
+  padding: 22px 0 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 0 0;
+  }
+}
+
 .programs__list {
   @include no-list;
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 80px;
   }
 }
 
@@ -12,7 +20,7 @@
   position: relative;
   display: block;
   margin: 0 0 20px;
-  padding: 22px 20px 10px 21px;
+  padding: 22px 20px 10px 20px;
   background: $basic_grey;
 
   &:last-child {
@@ -20,12 +28,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 280px 53px 52px;
+    margin: 0 0 30px;
+    padding: 77px 280px 46px 52px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 41px 50px 55px;
+    padding: 41px 51px 49px;
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      padding: 77px 313px 46px 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 41px 51px 49px;
+    }
   }
 }
 
@@ -41,13 +60,25 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -25px;
-    margin-left: -25px;
+    transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
     background: $basic_green;
     border-radius: 50%;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      top: auto;
+      bottom: 0;
+      width: 200px;
+      height: 200px;
+      transform: translate(-50%, 0);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::after {
@@ -64,22 +95,50 @@
     background-image: url("../img/icon-cat-slim.svg");
     background-size: 36px auto;
     background-position: 15px -1px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 140px 192px;
+      background-position: 64px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 70px 97px;
+      background-position: 34px 0;
+    }
   }
 
   &--pro::after {
     background-image: url("../img/icon-cat-pro.svg");
     background-size: 67px auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background-size: 268px 112px;
+      background-position: center calc(50% + 4px);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 134px 56px;
+      background-position: 0 27px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
+    right: 28px;
+    top: 81px;
+    width: 268px;
+    height: 211px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     right: auto;
+    top: auto;
+    width: 134px;
+    height: 106px;
+    margin: 0 43px 0 -18px;
   }
 }
 
@@ -96,21 +155,43 @@
   text-transform: uppercase;
   font-family: $title_font_family;
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 2px 0 0;
+  }
 }
 
 .programs__txt {
-  margin: 21px 0 0;
-  padding: 0 0 22px;
+  margin: 23px 0 0;
+  padding: 0 0 26px;
   font-size: 14px;
   line-height: (18 / 14);
   color: $special_dark-grey;
   border-bottom: 1px solid $special_grey-1;
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: (24 / 16);
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 0 0;
+  }
 }
 
 .programs__link {
   position: relative;
   display: inline-block;
-  padding: 19px 39px 12px 0;
+  margin: 10px 0 0;
+  padding: 10px 59px 10px 0;
   font-size: 16px;
   line-height: 1;
   color: black;
@@ -121,11 +202,34 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 8px;
     width: 24px;
     height: 12px;
-    margin-top: -3px;
-    background: url("../img/icons/arrow-right.svg") no-repeat;
+    margin-top: -6px;
+    background: url("../img/icons/arrow-right-32.svg") no-repeat;
+    background-position: 100% 0;
     content: "";
+    transition: right 0.3s, width 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    width: 32px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 42px 0 0;
+    padding: 10px 49px 10px 0;
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 16px 0 0;
+    padding: 10px 53px 10px 0;
   }
 }

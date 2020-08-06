@@ -18,11 +18,15 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    margin: 0 0 0 34px;
+    margin: 0 0 0 37px;
 
     &:first-child {
       margin: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 34px;
   }
 }
 
@@ -38,8 +42,41 @@
   text-transform: uppercase;
   font-family: $title_font_family;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+      border-bottom: 2px solid transparent;
+
+      &.main-nav__list-link--active {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 0 0 12px;
+    padding: 17px 0 6px;
+    font-size: 18px;
+    line-height: (24 / 18);
+    letter-spacing: -0.6px;
+    border-bottom: 2px solid transparent;
+
+    &--active {
+      border-bottom: 2px solid $basic_green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 0 6px;
+    font-size: 20px;
+    line-height: (30 / 20);
   }
 }
 
