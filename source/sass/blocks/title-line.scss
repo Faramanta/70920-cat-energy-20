@@ -55,4 +55,8 @@
     font-size: 36px;
     padding: 0 36px;
   }
+  
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 -7px;
+  }
 }
