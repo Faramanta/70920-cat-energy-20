@@ -118,17 +118,34 @@
 }
 
 .form__field {
+  position: relative;
   width: 100%;
   height: 45px;
-  padding: 10px 13px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.form__field-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px 10px 13px;
   font-size: 16px;
   line-height: (18 / 16);
   color: $special_dark-grey;
   text-transform: uppercase;
-  border: 1px solid $basic_grey-3;
-  box-sizing: border-box;
   font-family: $title_font_family;
   outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid $basic_grey-3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: (30 / 20);
+  }
 
   &:hover {
     border-color: $special_grey;
@@ -137,19 +154,33 @@
   &:focus {
     border-color: $special_dark-grey;
     box-shadow: 0 0 0 1px $special_dark-grey;
+
+    & + .form__field-icon {
+      fill: $basic_green;
+    }
   }
 
   &.error {
     border-color: $status_error;
     box-shadow: 0 0 0 1px $status_error;
-  }
 
-  @media (min-width: $tablet-width) {
-    height: 52px;
-    padding: 10px 17px;
-    font-size: 20px;
-    line-height: (30 / 20);
+    & + .form__field-icon {
+      fill: $status_error;
+    }
   }
+}
+
+.form__field-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  fill: $special_dark-grey-2;
+}
+
+
+.form__field--phone .form__field-icon {
+  right: 13px;
 }
 
 .form__field--textarea {
@@ -163,43 +194,6 @@
 
   @media (min-width: $desktop-width) {
     height: 174px;
-  }
-}
-
-.form__field--email {
-  background-image: url("../img/icon_email.svg");
-  background-position: calc(100% - 14px) center;
-  background-repeat: no-repeat;
-
-  &:focus {
-    background-image: url("../img/icon_email-green.svg");
-  }
-
-  &.error {
-    background-image: url("../img/icon_email-red.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    background-position: calc(100% - 17px) center;
-  }
-}
-
-.form__field--phone {
-  position: relative;
-  background-image: url("../img/icon-phone2.svg");
-  background-position: calc(100% - 12px) center;
-  background-repeat: no-repeat;
-
-  &:focus {
-    background-image: url("../img/icon-phone2-green.svg");
-  }
-
-  &.error {
-    background-image: url("../img/icon-phone2-red.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    background-position: calc(100% - 17px) center;
   }
 }
 
