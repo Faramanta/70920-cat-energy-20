@@ -68,6 +68,10 @@
   margin-top: -3px;
   background: $basic_green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
 }
 
 .progress-bar__grip {

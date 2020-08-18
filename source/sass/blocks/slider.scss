@@ -1,8 +1,8 @@
 .slider {
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 0;
-    top: -54px;
+    right: -10px;
+    top: -50px;
     width: 690px;
     margin: 0;
     padding: 0;
@@ -11,15 +11,15 @@
 }
 
 .slider__progress-bar {
-  margin: 24px 0 0;
+  margin: 22px 0 0;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    margin: 5px 86px 0;
+    margin: 12px 86px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 49px 21px 0 77px;
+    margin: 30px 31px 0 68px;
   }
 }
 
@@ -28,7 +28,7 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    width: 670px;
-    height: 500px;
+    width: 686px;
+    height: 514px;
   }
 }

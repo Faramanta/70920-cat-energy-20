@@ -14,13 +14,14 @@
 
 .about__list {
   @include no-list;
-  margin: 38px 0 0;
+  margin: 40px 0 0;
   counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 250px);
     gap: 37px 134px;
+    margin: 38px 0 0;
     max-width: 650px;
   }
 
@@ -89,6 +90,14 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+  }
+}
+
+.about__icon-img {
+  margin: 3px 0 0;
+
+  @media (min-width: $tablet-width) {
+
   }
 }
 

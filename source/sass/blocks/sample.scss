@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 64px;
-    background-image: linear-gradient(to bottom, $white 0, $white 57%, $basic_grey-2 57%, $basic_grey-2 100%);
+    background-image: linear-gradient(to bottom, $white 0, $white 58%, $basic_grey-2 58%, $basic_grey-2 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -22,9 +22,9 @@
 }
 
 .sample__txt {
-  margin: 37px 0 0;
+  margin: 34px 0 0;
   font-size: 14px;
-  line-height: (18 / 14);
+  line-height: (19 / 14);
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +39,7 @@
 }
 
 .sample__labels {
-  margin: 29px auto 0;
+  margin: 25px auto 0;
 
   @media (min-width: $tablet-width) {
     margin: 53px 0 0;
@@ -51,9 +51,9 @@
 }
 
 .sample__slider {
-  margin: 42px -20px 0;
+  margin: 35px -20px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 108px -30px 0;
+    margin: 86px -30px 0;
   }
 }

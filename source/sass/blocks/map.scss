@@ -13,18 +13,18 @@
   right: 50%;
   width: 57px;
   height: 53px;
-  margin-top: -44px;
+  margin-top: -42px;
   margin-right: -28px;
 
   @media (min-width: $tablet-width) {
     width: 105px;
     height: 104px;
-    top: calc(50% - 9px);
+    top: calc(50% - 11px);
     right: calc(50% - 24px);
   }
 
   @media (min-width: $desktop-width) {
-    top: calc(50% - 24px);
+    top: calc(50% - 26px);
     right: calc(32% - 4px);
   }
 }

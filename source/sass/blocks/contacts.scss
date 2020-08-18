@@ -5,7 +5,7 @@
 .contacts__header {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px 27px;
+  padding: 28px 20px 26px;
 
   &--grey {
     background: $basic_grey;
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 64px 71px 58px;
+    padding: 64px 71px 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,8 +89,10 @@
 }
 
 .contacts__address-top {
+  display: block;
+  margin: 0 0 1px;
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 19px;
-    display: block;
+    margin: 0 0 21px;
   }
 }

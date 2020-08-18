@@ -7,12 +7,12 @@
   background-size: 100% auto;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 0 526px;
+    padding: 50px 0 504px;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 106px 0 186px;
+    padding: 104px 0 186px;
   }
 }
 
@@ -79,7 +79,7 @@
     position: absolute;
     z-index: -1;
     right: 50%;
-    max-width: 672px;
+    max-width: 708px;
     width: 100%;
     height: auto;
     transform: translate(50%, 21px);
@@ -98,7 +98,7 @@
 
 .banner__button {
   width: 280px;
-  margin: 3px auto 0;
+  margin: 2px auto 0;
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
@@ -109,6 +109,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 51px 0 0;
+    margin: 52px 0 0;
   }
 }
