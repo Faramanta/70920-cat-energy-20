@@ -4,8 +4,18 @@
   align-items: center;
   text-decoration: none;
 
+  &:hover {
+    .copyright__icon {
+      fill: $basic_green;
+    }
+  }
+
   &:active {
     opacity: 0.3;
+
+    .copyright__icon {
+      fill: transparentize($basic_green, 0.7);
+    }
   }
 }
 
@@ -16,11 +26,14 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin: 0 16px 0 0;
+    margin: 0 24px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 23px 0 0;
   }
 }
 
 .copyright__icon {
-  margin: 0 -4px 0 0;
-  fill: #666666;
+  fill: $special_grey-3;
 }

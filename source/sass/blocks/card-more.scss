@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     border-right: none;
     border-left: none;
-    padding: 26px 285px 25px 0;
+    padding: 26px 275px 25px 0;
   }
 }
 
@@ -54,13 +54,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 287px;
+    margin: 7px 0 0;
+    width: 294px;
   }
 }
 
 .card-more__properties-value {
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 43px;
+    min-width: 50px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
