@@ -43,7 +43,6 @@
   color: $special_dark-grey-3;
   font-family: $title_font_family;
 
-
   @media (min-width: $tablet-width) {
     width: 30%;
     margin: 2px 0 0;
@@ -53,6 +52,8 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    max-height: 74px;
+    overflow: hidden;
   }
 }
 
@@ -85,6 +86,8 @@
     width: 40%;
     text-align: left;
     margin: 4px 0 0;
+    max-height: 80px;
+    overflow: hidden;
   }
 }
 

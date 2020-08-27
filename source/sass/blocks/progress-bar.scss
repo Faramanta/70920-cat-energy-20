@@ -59,28 +59,29 @@
   }
 }
 
-.progress-bar__value {
+.progress-bar__grip {
   position: absolute;
   height: 6px;
   width: 35px;
-  left: 6px;
   top: 50%;
-  margin-top: -3px;
+  margin: -3px 0 0;
   background: $basic_green;
   border-radius: 6px;
 
-  @media (min-width: $tablet-width) {
-    left: 0;
+  &.before {
+    left: 6px;
+    right: auto;
   }
-}
 
-.progress-bar__grip {
-  display: none;
+  &.after {
+    right: 6px;
+    left: auto;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -15px;
-    margin-right: 27px;
+    margin: 0;
     display: block;
     width: 34px;
     height: 34px;
@@ -89,6 +90,14 @@
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     background: $white;
     cursor: pointer;
+
+    &.before {
+      left: 0;
+    }
+
+    &.after {
+      right: 0;
+    }
   }
 
   &::after {

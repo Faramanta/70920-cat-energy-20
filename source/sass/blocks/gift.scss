@@ -10,6 +10,7 @@
     align-items: center;
     padding: 60px 116px 67px 88px;
     background: $basic_green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +18,8 @@
     width: 245px;
     height: 289px;
     padding: 64px 40px 41px;
+    background: $basic_green url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -47,5 +50,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    max-height: 100px;
+    overflow: hidden;
   }
 }
