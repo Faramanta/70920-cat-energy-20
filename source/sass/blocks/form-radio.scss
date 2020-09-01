@@ -9,7 +9,6 @@
 }
 
 .form-radio__input {
-
   &:checked {
     & + .form-radio__label::after {
       content: "";
