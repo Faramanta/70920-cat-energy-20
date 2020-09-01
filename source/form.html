@@ -55,34 +55,34 @@
               <div class="form__row">
                 <label class="form__label" for="catName">имя:*</label>
                 <div class="form__field">
-                  <input class="form__field-input" type="text" id="catName" placeholder="барсик" required>
+                  <input class="form__field-input" type="text" name="catName" id="catName" placeholder="барсик" required>
                 </div>
               </div>
               <div class="form__row">
                 <label class="form__label" for="catWeight">Вес (кг):*</label>
                 <div class="form__field">
-                  <input class="form__field-input" type="number" id="catWeight" placeholder="7" required>
+                  <input class="form__field-input" type="number" name="catWeight" id="catWeight" placeholder="7" required>
                 </div>
               </div>
               <div class="form__row">
                 <label class="form__label" for="catAge">Возраст (лет):</label>
                 <div class="form__field">
-                  <input class="form__field-input" type="number" id="catAge" placeholder="7">
+                  <input class="form__field-input" type="number" name="catAge" id="catAge" placeholder="7">
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--border">
               <div class="form__radio form-radio">
-                <input type="radio" name="program" class="form-radio__input" id="slimming" checked>
+                <input type="radio" name="program" class="form-radio__input visually-hidden" id="slimming" value="slimming" checked>
                 <label class="form-radio__label" for="slimming">похудение</label>
               </div>
               <div class="form__radio form-radio">
-                <input type="radio" name="program" class="form-radio__input" id="weightGain">
+                <input type="radio" name="program" class="form-radio__input visually-hidden" id="weightGain" value="weightGain">
                 <label class="form-radio__label" for="weightGain">Набор массы</label>
               </div>
               <div class="form__radio form-radio">
-                <input type="radio" name="program" class="form-radio__input" id="dontKnow">
+                <input type="radio" name="program" class="form-radio__input visually-hidden" id="dontKnow" value="dontKnow">
                 <label class="form-radio__label" for="dontKnow">Не знаю (Нужен ваш совет)</label>
               </div>
             </fieldset>
@@ -98,7 +98,7 @@
             <div class="form__row">
               <label class="form__label" for="email">E-mail:*</label>
               <div class="form__field form__field--email">
-                <input class="form__field-input " type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <input class="form__field-input " type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__field-icon" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
@@ -107,7 +107,7 @@
             <div class="form__row">
               <label class="form__label" for="phone">Телефон:*</label>
               <div class="form__field form__field--phone">
-                <input class="form__field-input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__field-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__field-icon" width="20" height="20">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -123,7 +123,8 @@
 
           <div class="form__section form__section--accent">
             <div class="form__field form__field--textarea">
-              <textarea class="form__field-input" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment"></label>
+              <textarea class="form__field-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
 
@@ -136,19 +137,19 @@
           <div class="form__section form__section--accent">
             <div class="form__list">
               <div class="form__checkbox form-checkbox">
-                <input type="checkbox" name="productMore" class="form-checkbox__input" id="sweetener" checked>
+                <input type="checkbox" name="productMore" class="form-checkbox__input visually-hidden" id="sweetener" value="sweetener" checked>
                 <label class="form-checkbox__label" for="sweetener">сахарозаменитель</label>
               </div>
               <div class="form__checkbox form-checkbox">
-                <input type="checkbox" name="productMore" class="form-checkbox__input" id="water">
+                <input type="checkbox" name="productMore" class="form-checkbox__input visually-hidden" id="water" value="water">
                 <label class="form-checkbox__label" for="water">питьевая вода</label>
               </div>
               <div class="form__checkbox form-checkbox">
-                <input type="checkbox" name="productMore" class="form-checkbox__input" id="milk">
+                <input type="checkbox" name="productMore" class="form-checkbox__input visually-hidden" id="milk" value="milk">
                 <label class="form-checkbox__label" for="milk">молоко</label>
               </div>
               <div class="form__checkbox form-checkbox">
-                <input type="checkbox" name="productMore" class="form-checkbox__input" id="vitamins">
+                <input type="checkbox" name="productMore" class="form-checkbox__input visually-hidden" id="vitamins" value="vitamins">
                 <label class="form-checkbox__label" for="vitamins">витамины</label>
               </div>
             </div>

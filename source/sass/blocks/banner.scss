@@ -6,13 +6,17 @@
   background-position: top center;
   background-size: 100% auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 50px 0 504px;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 104px 0 186px;
+    padding: 107px 0 186px;
   }
 }
 

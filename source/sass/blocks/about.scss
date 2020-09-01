@@ -46,7 +46,7 @@
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
-      left: 112px;
+      right: 2px;
       top: -6px;
       counter-increment: myCounter;
       content: counter(myCounter);
@@ -56,11 +56,19 @@
       font-family: $title_font_family;
       z-index: -1;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -2px;
+    }
   }
 
   &:first-child::before {
     @media (min-width: $tablet-width) {
-      left: 118px;
+      right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
     }
   }
 

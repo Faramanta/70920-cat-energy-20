@@ -11,36 +11,38 @@
     <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '');</script>
   </head>
 
-  <body class="index">
-    <header class="page-header">
-      <div class="container page-header__container">
-        <a class="page-header__logo logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" class="logo__img" >
-          </picture>
-        </a>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="container page-header__container">
+          <a class="page-header__logo logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" class="logo__img" >
+            </picture>
+          </a>
 
-        <nav class="page-header__main-nav main-nav">
-          <button class="page-header__toggle toggle-nav-button toggle-nav-button--open js-toggle-nav-button" type="button">
-            <span class="toggle-nav-button__icon"></span>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <span class="main-nav__list-link main-nav__list-link--index main-nav__list-link--active">главная</span>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="catalog.html" class="main-nav__list-link main-nav__list-link--index">каталог продукции</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="form.html" class="main-nav__list-link main-nav__list-link--index">подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+          <nav class="page-header__main-nav main-nav">
+            <button class="page-header__toggle toggle-nav-button toggle-nav-button--open js-toggle-nav-button" type="button">
+              <span class="toggle-nav-button__icon"></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <span class="main-nav__list-link main-nav__list-link--index main-nav__list-link--active">главная</span>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="catalog.html" class="main-nav__list-link main-nav__list-link--index">каталог продукции</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="form.html" class="main-nav__list-link main-nav__list-link--index">подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
 
     <main class="page-main">
       <h1 class="visually-hidden">Кэт энерджи</h1>

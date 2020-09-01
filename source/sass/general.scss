@@ -32,11 +32,29 @@ body {
   font-family: $base_font_family;
   color: $special_dark-grey;
   background-color: $white;
+}
 
-  &.index {
-    @media (min-width: $desktop-width) {
-      background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
-      background-size: 50% auto;
+.wrapper {
+  display: contents;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      display: block;
+      width: 50%;
+      max-width: 720px;
+      height: 696px;
+      background: $basic_green url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+      background-size: cover;
+      z-index: -1;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
