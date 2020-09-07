@@ -2,11 +2,11 @@
   padding: 27px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 51px 0 0;
+    padding: 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 68px 0 0;
+    padding: 70px 0 0;
   }
 }
 
@@ -25,12 +25,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 58px 60px;
-    margin: 84px 0 0;
+    margin: 82px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 62px 80px;
+    margin: 83px 0 0;
   }
 }
 

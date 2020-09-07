@@ -4,7 +4,7 @@
   background: $basic_green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 
@@ -16,7 +16,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: cover;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
@@ -24,12 +24,12 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     padding: 64px 40px 41px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
@@ -62,7 +62,5 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    max-height: 100px;
-    overflow: hidden;
   }
 }

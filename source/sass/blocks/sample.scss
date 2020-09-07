@@ -11,6 +11,16 @@
     position: relative;
     padding: 62px 0 74px;
     background-image: linear-gradient(to bottom, $white 0, $white 30%, $basic_grey 30%, $basic_grey 100%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: calc(50% - 325px);
+      background-image: linear-gradient(to bottom, $white 0, $white 30%, $basic_grey-2 30%, $basic_grey-2 100%);
+    }
   }
 }
 
