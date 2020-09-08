@@ -9,8 +9,6 @@
 }
 
 .form-radio__input {
-  display: none;
-
   &:checked {
     & + .form-radio__label::after {
       content: "";
@@ -35,6 +33,10 @@
         background: transparentize($basic_green, 0.7);
       }
     }
+  }
+
+  &:focus + .form-radio__label::before {
+    outline: auto;
   }
 }
 

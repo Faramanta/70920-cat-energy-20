@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -15,15 +16,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 36px 0 112px;
     flex-direction: column;
     align-items: center;
     border-bottom: none;
-    padding: 36px 0 40px;
-    background-image: linear-gradient(to bottom, $white 0, $white 81px, $basic_grey 81px, $basic_grey 100%);
+    background-image: linear-gradient(to bottom, $white 0, $white 82px, $basic_grey 82px, $basic_grey 100%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 28px 0 40px;
+    padding: 29px 0 112px;
   }
 }
 
@@ -31,11 +33,11 @@
   padding: 5px 20px 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 8px 0 40px;
+    padding: 6px 0 106px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 3px 0 40px;
+    padding: 0 0 112px;
   }
 
   .card__img-wrap {
@@ -53,11 +55,11 @@
     margin: 16px 0 0;
 
     @media (min-width: $tablet-width) {
-      margin: -19px auto 0;
+      margin: 26px auto 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin: -14px auto 0;
+      margin: 33px auto 0;
     }
   }
 
@@ -77,6 +79,12 @@
   .card__title {
     max-width: 100%;
     margin: 19px auto 0;
+    font-size: 16px;
+    line-height: 1.25em;
+    font-weight: normal;
+    color: $special_dark-grey-2;
+    text-transform: uppercase;
+    font-family: $title_font_family;
 
     @media (min-width: $tablet-width) {
       max-width: 250px;
@@ -151,26 +159,33 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 40px auto 0;
+    margin: 38px auto 0;
   }
 }
 
 .card__title {
   max-width: 80px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}
+
+.card__title-link {
   font-size: 16px;
   line-height: 1.25em;
   font-weight: normal;
   color: $special_dark-grey-2;
   text-transform: uppercase;
   font-family: $title_font_family;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    max-width: 150px;
     font-size: 20px;
     line-height: (24 / 20);
     text-align: center;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -181,14 +196,14 @@
 
 .card__properties-list {
   @include no-list;
-  margin: 15px 0 0;
+  margin: 12px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 13px 0 0;
+    margin: 9px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 15px 0 0;
+    margin: 11px 0 0;
   }
 }
 
@@ -213,13 +228,14 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 40px;
     width: 250px;
-    margin: 32px auto 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
-    margin: 33px auto 0;
   }
 }
 

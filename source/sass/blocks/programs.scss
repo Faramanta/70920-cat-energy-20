@@ -50,11 +50,11 @@
 
 .programs__icon {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
   width: 67px;
   height: 53px;
-  margin: 0 6px 0 -6px;
+  margin: 0 10px 0 -6px;
 
   &::before {
     position: absolute;
@@ -138,7 +138,7 @@
     top: auto;
     width: 134px;
     height: 106px;
-    margin: 0 43px 0 -17px;
+    margin: 0 45px 0 -17px;
   }
 }
 
@@ -146,7 +146,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
+  margin: 7px 0 0;
   padding: 0;
   font-size: 24px;
   line-height: (37 / 24);
@@ -154,15 +154,17 @@
   color: $black;
   text-transform: uppercase;
   font-family: $title_font_family;
-  width: auto;
+  width: calc(100% - 75px);
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
+    width: calc(100% - 20px);
   }
 
   @media (min-width: $desktop-width) {
-    margin: 2px 0 0;
+    margin: 36px 0 0;
+    width: calc(100% - 165px);
   }
 }
 

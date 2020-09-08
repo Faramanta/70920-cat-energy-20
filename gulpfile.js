@@ -10,11 +10,13 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
 
 const sync = require("browser-sync").create();
 
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build/"))
     .pipe(sync.stream());
 };

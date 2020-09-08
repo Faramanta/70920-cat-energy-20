@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 
     <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '');</script>
   </head>
 
-  <body class="is-nav-open">
+  <body>
     <header class="page-header">
       <div class="container page-header__container">
         <a href="index.html" class="page-header__logo logo">
@@ -21,7 +23,7 @@
         </a>
 
         <nav class="page-header__main-nav main-nav">
-          <button class="page-header__toggle toggle-nav-button toggle-nav-button--open" type="button">
+          <button class="page-header__toggle toggle-nav-button toggle-nav-button--open js-toggle-nav-button" type="button">
             <span class="toggle-nav-button__icon"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -49,7 +51,7 @@
         <div class="container">
           <div class="catalog__list ">
             <article class="catalog__list-item card">
-              <div class="card__img-wrap card__img-wrap--first">
+              <a href="#" class="card__img-wrap card__img-wrap--first">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -59,10 +61,12 @@
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
                   <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г" class="card__img">
                 </picture>
-              </div>
+              </a>
 
               <div class="card__info">
-                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                  <h3 class="card__title">
+                    <a href="#" class="card__title-link">Cat Energy PRO 500 г</a>
+                  </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -83,7 +87,7 @@
             </article>
 
             <article class="catalog__list-item card card--big-img">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
@@ -93,9 +97,11 @@
                   <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
                   <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy PRO 1000 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -115,7 +121,7 @@
             </article>
 
             <article class="catalog__list-item card">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -125,9 +131,11 @@
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
                   <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy PRO 500 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy PRO 500 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -147,7 +155,7 @@
             </article>
 
             <article class="catalog__list-item card card--big-img">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -157,9 +165,11 @@
                   <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
                   <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy PRO 1000 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -179,7 +189,7 @@
             </article>
 
             <article class="catalog__list-item card">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -189,9 +199,11 @@
                   <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
                   <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy slim 500 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy slim 500 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -211,7 +223,7 @@
             </article>
 
             <article class="catalog__list-item card card--big-img">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -221,9 +233,11 @@
                   <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
                   <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy slim 1000 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy slim 1000 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -243,7 +257,7 @@
             </article>
 
             <article class="catalog__list-item card">
-              <div class="card__img-wrap">
+              <a href="#" class="card__img-wrap">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -253,9 +267,11 @@
                   <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
                   <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г" class="card__img">
                 </picture>
-              </div>
+              </a>
               <div class="card__info">
-                <h3 class="card__title">Cat Energy slim 500 г</h3>
+                <h3 class="card__title">
+                  <a href="#" class="card__title-link">Cat Energy slim 500 г</a>
+                </h3>
                 <ul class="card__properties-list">
                   <li class="card__properties-item">
                     <span class="card__properties-label">Масса</span>
@@ -279,9 +295,9 @@
                 <svg width="30" height="30" class="card__img">
                   <use xlink:href="img/sprite.svg#icon-plus"></use>
                 </svg>
-                <p class="card__title">Показать еще 100500&nbsp;товаров</p>
+                <h3 class="card__title">Показать еще 100500&nbsp;товаров</h3>
                 <p class="card__txt">На самом деле вкусов гораздо больше!</p>
-                <button class="catalog__button-more button button--grey" type="button">показать все</button>
+                <a href="#" class="catalog__button-more button button--grey">показать все</a>
               </div>
             </article>
           </div>
@@ -353,10 +369,7 @@
           </p>
         </div>
 
-        <div class="contacts__map map">
-          <div class="map__pin">
-            <img src="img/map-pin.png" class="map__pin-icon" width="124" height="106" alt="">
-          </div>
+        <div class="contacts__map map" id="map">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -405,7 +418,7 @@
           </ul>
         </div>
 
-        <a href="https://up.htmlacademy.ru/adaptive/20" class="page-footer__copyright copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright copyright">
           <span class="copyright__txt">HTML Academy</span>
           <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
@@ -413,5 +426,8 @@
         </a>
       </div>
     </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=dc7db1e9-a067-4d40-ae97-cf2aa238bf7a&lang=ru_RU"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

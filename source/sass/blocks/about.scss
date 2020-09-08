@@ -36,7 +36,6 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin: 0 0 20px;
 
   &:last-child {
@@ -46,7 +45,7 @@
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
-      left: 112px;
+      right: 2px;
       top: -6px;
       counter-increment: myCounter;
       content: counter(myCounter);
@@ -56,11 +55,19 @@
       font-family: $title_font_family;
       z-index: -1;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -2px;
+    }
   }
 
   &:first-child::before {
     @media (min-width: $tablet-width) {
-      left: 118px;
+      right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
     }
   }
 
@@ -99,7 +106,7 @@
 
 .about__txt {
   width: 100%;
-  margin: 0;
+  margin: 2px 0 0;
   font-size: 14px;
   line-height: 1.3em;
   color: $special_dark-grey;

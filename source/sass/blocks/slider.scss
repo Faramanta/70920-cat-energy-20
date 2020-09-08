@@ -23,6 +23,14 @@
   }
 }
 
+.slider__slide {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
+
 .slider__img {
   display: block;
   margin: auto;
