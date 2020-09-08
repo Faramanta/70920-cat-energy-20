@@ -35,7 +35,7 @@ if (sliderAfterBtn) {
     }
   });
 }
-// Slider -- ends
+// Slider -- end
 
 let myMap;
 let myPlacemark;
@@ -85,49 +85,3 @@ function init(){
   setMapProps();
   myMap.geoObjects.add(myPlacemark);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// const viewport = document.documentElement.clientWidth;
-// const tabletWidth = 768;
-// const desktopWidth = 1280;
-//
-// let myMap;
-// function init () {
-//
-//   myMap = new ymaps.Map("map", {
-//     center: [59.938635, 30.323118], //  центр
-//     behaviors: ['default', 'scrollZoom'],
-//     zoom: 17,
-//     controls: []
-//   });
-//
-//   /* Создаем кастомные метки */
-//   myPlacemark = new ymaps.Placemark([59.938635, 30.323118], { // Создаем метку с такими координатами и суем в переменную
-//     balloonContentBody: [] // сдесь содержимое балуна в формате html, все стили в css
-//   }, {
-//     iconImageHref: 'img/map-pin.png', // картинка иконки
-//     iconImageSize: [57, 50], // размер иконки
-//     iconImageOffset: [-32, -64], // позиция иконки
-//   });
-//
-//   myMap.geoObjects
-//     .add(myPlacemark);
-// }
-//
-// if (viewport <= tabletWidth) {
-//   myPlacemark.options.set("iconImageSize", [105, 104]);
-// }
-//
-// if (tabletWidth < viewport <= desktopWidth) {
-//
-// }
