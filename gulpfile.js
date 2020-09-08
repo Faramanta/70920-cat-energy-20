@@ -114,5 +114,5 @@ exports.watcher = watcher;
 exports.build = build;
 
 exports.default = gulp.series(
-  styles, html, server, watcher
+  build, styles, html, server, watcher
 );
