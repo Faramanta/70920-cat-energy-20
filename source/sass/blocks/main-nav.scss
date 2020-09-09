@@ -1,3 +1,9 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
+}
+
 .main-nav__list {
   @include no-list;
   display: none;
@@ -12,6 +18,7 @@
     position: relative;
     top: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-top: none;
     background: transparent;
@@ -24,10 +31,6 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin: 0 0 0 37px;
-
-    &:first-child {
-      margin: 0;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -97,7 +100,7 @@
   }
 
   .page-header__main-nav {
-    margin: 12px -20px 0;
+    margin: 2px 0px 0 0px;
   }
 }
 

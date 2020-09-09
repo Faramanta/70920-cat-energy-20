@@ -264,14 +264,14 @@
 }
 
 .form__title--additionally {
-  margin: 23px 0 0;
+  margin: 19px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 49px 0 0;
+    margin: 45px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 67px 0 0;
+    margin: 64px 0 0;
   }
 }
 
@@ -293,8 +293,8 @@
   line-height: 1;
   color: $black;
   background: $white;
-  max-width: 198px;
-  padding: 0 15px 0 0;
+  max-width: 206px;
+  padding: 0 23px 0 0;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
@@ -314,7 +314,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 221px);
-    gap: 0 104px;
+    gap: 30px 104px;
     max-width: 100%;
   }
 }

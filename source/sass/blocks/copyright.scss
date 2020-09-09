@@ -5,13 +5,13 @@
   text-decoration: none;
 
   &:hover {
-    .copyright__icon {
+    .copyright__icon  {
       fill: $basic_green;
     }
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.7;
 
     .copyright__icon {
       fill: transparentize($basic_green, 0.7);
