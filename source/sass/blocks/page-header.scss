@@ -2,7 +2,7 @@
   position: relative;
   padding: 10px 0 0;
   min-height: 66px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $special_grey-1;
 
   @media (min-width: $tablet-width) {
     padding: 24px 0 0;
