@@ -22,6 +22,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
+  }
 }
 
 .page-header__logo {
@@ -39,5 +43,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.no-js {
+  .page-header__main-nav {
+    margin: 2px 0 0;
   }
 }
